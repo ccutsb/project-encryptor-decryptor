@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="icon" href="assets/icono.png" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="contenedor__global">
+      <div class="contenedor">
+        <header class="header">
+          <img class="header__logo" src="assets/Logo.png" alt="logo de alura" />
+        </header>
+
+        <main class="main">
+          <section class="section__contenido">
+            <textarea
+              id="texto_ingresado"
+              placeholder="Ingrese el texto aquí"
+            ></textarea>
+            <div class="section__contenido__botones">
+              <p class="parrafo__condicional">
+                <img
+                  class="parrafo__condicional__img"
+                  src="assets/exclamacion.png"
+                  alt="signo de exclamacion"
+                />
+                Solo letras minúsculas y sin acentos
+              </p>
+              <div class="boton__contenido">
+                <button class="boton boton-encriptar" onclick="btnEncriptar();">
+                  Encriptar
+                </button>
+                <button
+                  class="boton boton-desencriptar"
+                  onclick="btnDesencriptar();"
+                >
+                  Desencriptar
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="section__mensaje">
+            <img
+              class="section__mensaje__img"
+              src="assets/muneco.png"
+              alt="imagen de un muñeco"
+            />
+            <h2 class="section__mensaje__titulo">
+              Ningún mensaje fue encontrado
+            </h2>
+            <p id="mensaje">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+            <button class="boton boton-copiar" onclick="copiarTexto();" hidden>
+              Copiar
+            </button>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__parrafo">© Desarrollado por Cristian Cortés</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
